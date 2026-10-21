@@ -2,7 +2,7 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-@app.get("/",{id})
+@app.get("/")
 def home(id:int):
     if(id==1):
         return {"patil madarchod"}
